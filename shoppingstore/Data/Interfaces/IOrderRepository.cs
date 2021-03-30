@@ -1,11 +1,13 @@
-﻿using System;
+﻿using shoppingstore.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace shoppingstore.Data.Interfaces
 {
-    public class IOrderRepository
+    public interface IOrderRepository
     {
+        void CreateOrder(Order order);
     }
 }
