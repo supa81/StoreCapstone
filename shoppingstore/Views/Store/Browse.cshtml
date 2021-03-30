@@ -1,0 +1,18 @@
+﻿@model shoppingstore.Models.Category
+
+@{
+    ViewData["Name"] = "Browse";
+}
+
+<h1>Browsing Category @Model.CategoryName</h1>
+
+<ul>
+@foreach(var items in Model.Items)
+{
+
+    <li>
+        @items.Name
+
+    </li>
+}
+</ul>
